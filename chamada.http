@@ -1,0 +1,37 @@
+# GET http://localhost:4545/orders?symbol=${SYMBOL}&status=NEW
+
+
+PUT  http://localhost:4545/book/9fe1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "qtd": 999
+}
+
+###
+GET http://localhost:4545/book?id=9fe1
+
+
+###
+PATCH http://localhost:4545/orders/3b8f
+Content-Type: application/json
+Accept: application/json
+
+{
+    "price":"23780"
+    // "quantity": 0.0001
+}
+
+
+# ###
+# DELETE http://localhost:4545/orders/78fb
+###
+
+DELETE http://localhost:4545/orders/368a
+
+###
+GET http://localhost:3000/binance/historicTrades
+
+###
+GET http://localhost:3000/binance/avgPrice
